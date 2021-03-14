@@ -5,8 +5,8 @@ return [
         'controller'=>'main',
         'action'=>'index'
     ],
-    'MVC_Example/account/login' => [
-        'controller'=>'account',
+    'MVC_Example/news/login' => [
+        'controller'=>'news',
         'action'=>'login'
     ],
     'MVC_Example/news/show'=>[
