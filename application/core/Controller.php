@@ -2,6 +2,7 @@
 namespace application\core;
 use function application\lib\Dev\debug;
 use application\core\View;
+use application\core\Model;
 abstract class Controller
 {
     public $route;
@@ -19,6 +20,7 @@ abstract class Controller
         if(class_exists($path))
         {
             return new $path;
+
         }
     }
 }
