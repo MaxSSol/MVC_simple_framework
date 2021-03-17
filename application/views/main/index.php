@@ -4,8 +4,8 @@
         <a class="p-2 text-dark" href="news/show">News</a>
     </nav>
     <?php
-    if(!empty($_SESSION['email'])){
-        echo "<a class='btn btn - outline - primary' href='account/login'>".$_SESSION['email']."</a>";
+    if(!empty($_SESSION['login'])){
+        echo "<a class='btn btn - outline - primary' href='account/login'>".$_SESSION['login']."</a>";
     } else {
         echo "<a class='btn btn - outline - primary' href='account/login'>Sign In</a>";
     }
