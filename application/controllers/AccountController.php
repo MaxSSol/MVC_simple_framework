@@ -42,8 +42,12 @@ class AccountController extends Controller
     {
         if(!empty($_SESSION['login']))
         {
-            header('Location:account/profile');
+            header('Location:/MVC_Example/account/profile');
         }
+    }
+    public function logoutAction()
+    {
+        $this->view->render('Bye!');
     }
 
 }

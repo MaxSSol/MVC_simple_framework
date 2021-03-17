@@ -13,6 +13,10 @@ return [
       'controller' => 'account',
       'action' => 'profile'
     ],
+    'MVC_Example/account/logout' =>[
+        'controller' => 'account',
+        'action' => 'logout'
+    ],
     'MVC_Example/news/show'=>[
         'controller'=>'news',
         'action'=>'show'
