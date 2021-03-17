@@ -8,6 +8,11 @@ class News extends Model
 {
 public function getNews()
 {
-    $this->db->row('SELECT * FROM news');
+    $result = $this->db->row('Select * FROM news');
+    $img1 = $result[0]['img'];
+    $params = [
+        'img1' => $img1
+    ];
+    return $params;
 }
 }
